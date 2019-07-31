@@ -39,3 +39,10 @@ Commit - Ruta resource, función index(ProductController) y edición vista welco
       -Route::resource('products', 'ProductController');
   -Se crea la función index en ProductController
   -Se edita la vista welcome.blade.php
+Commit - Usando Blade con Bootstrap | Herencia de Plantillas
+  -Se crea una carpeta en resources/views llamada products y dentro index.blade.php
+  -Se crea la vista views/layout.blade.php
+    -Se importa Bootstrap 3.3.7 (Css y JS)
+    -Se importa Jquery 1.12.4
+  -Se edita la vista products/index.blade.php
+  -Se edita la función index de ProductController para retornar la vista products/index.blade.php
