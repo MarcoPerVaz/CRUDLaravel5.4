@@ -49,3 +49,10 @@ Commit - Usando Blade con Bootstrap | Herencia de Plantillas
 Commit - Listar y Paginar elementos desde BD
   -En ProductController hacer uso del modelo Product en la función index
   -Se edita la vista products/index.blade.php para mostrar los datos del controlador a la vista
+Commit - Se implementa la letra R(Read) de CRUD
+  Nota: Al usar una ruta de tipo resource, las rutas ya han sido creadas
+  -Se crea la función show en ProductController
+  -Se crea la vista products/show.blade.php
+  -Se edita la vista products/index.blade.php 
+    -Se vincula Ver con la vista show.blade.php
+    -Se vincula Editar con la vista edit.blade.php
