@@ -59,3 +59,12 @@ Commit - Se implementa la letra R(Read) de CRUD
 Commit - Se implementa la letra D(Delete) de CRUD
   -Se crea la función destroy en ProductController
   -Se edita la vista index.blade.php, creando un formulario para eliminar el producto
+Commit - Usando Blade para crear Partials(Fragmentos de HTML)
+  -Se crea la carpeta fragment dentro de la carpeta products en resources/views
+  -Se crea el archivo aside.blade.php dentro de la carpeta fragment
+  -Se crea el archivo error.blade.php dentro de la carpeta fragment
+  -Se crea el archivo form.blade.php dentro de la carpeta fragment
+  -Se crea el archivo info.blade.php dentro de la carpeta fragment
+  -Se edita la vista info.blade.php y luego se usa la directiva include para agregarlo a la vista index.blade.php
+  -Se edita la vista aside.blade.php y luego se usa la directiva include para agregarlo a la vista index.blade.php
+    -Se usa la directiva include para agregarlo también a la vista show.blade.php
