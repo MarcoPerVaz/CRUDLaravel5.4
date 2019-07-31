@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        CRUDLaravel54\Providers\AppServiceProvider::class,
+        CRUDLaravel54\Providers\AuthServiceProvider::class,
+        // CRUDLaravel54\Providers\BroadcastServiceProvider::class,
+        CRUDLaravel54\Providers\EventServiceProvider::class,
+        CRUDLaravel54\Providers\RouteServiceProvider::class,
 
     ],
 

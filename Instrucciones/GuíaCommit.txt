@@ -3,3 +3,33 @@ Commit - Creación del proyecto CRUD-Laravel5.4
 Commit - Creación Carpeta Instrucciones
   -Creación y guía de instalación con el archivo Instalación.txt
   -Creación del archivo GuíaCommits.txt
+Commit - Creación de model, migration, controller, seeder
+  -Se crea el modelo Product con la migración y el controlador
+    -php artisan make:model Product -mc
+  -Se crea el seeder ProductsTableSeeder
+    -php artisan make:seeder ProductsTableSeeder
+  -Se edita la migración create_products_table
+  -Se edita el seeder ProductsTableSeeder
+    Nota: Se debe registrar el seeder en el archivo DatabaseSeeder.php
+  -Se modifica el nombre del proyecto 
+    -php artisan app:name CRUDLaravel54
+  -Se edita ProductsTableSeeder
+    -No olvidar importar el modelo Product
+      Nota: Como se cambió el nombre del namespace
+        -use CRUDLaravel54\Product;
+  -Se edita el archivo ModelFactory.php
+  -Se edita el modelo Product
+  Nota: Si se usa MariaDB hay un error
+    -Error 
+    -Solución
+      -En app/Providers/appServiceProvider
+        -En la función boot, colocar  Schema::defaultStringLength(191);
+          Nota: No olvidar importar el Facade Schema
+            -use Illuminate\Support\Facades\Schema;
+  -Se configura el archivo .env
+    DB_DATABASE=CRUDLaravel54
+    DB_USERNAME=root
+    DB_PASSWORD=
+  -Se crea la Base de Datos CRUDLaravel54
+  -Se usa el comando migrate:refresh
+    -php artisan migrate:refresh --seed

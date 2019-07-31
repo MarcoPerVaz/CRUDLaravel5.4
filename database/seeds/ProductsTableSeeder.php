@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
+// Importado CRUDLaravel5.4
+use CRUDLaravel54\Product;
 
-class DatabaseSeeder extends Seeder
+class ProductsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,8 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // CRUDLaravel5.4
-            $this->call(ProductsTableSeeder::class);
-        // 
+        factory(Product::class, 80)->create();
     }
 }

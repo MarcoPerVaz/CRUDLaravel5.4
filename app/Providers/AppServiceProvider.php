@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Providers;
+namespace CRUDLaravel54\Providers;
 
 use Illuminate\Support\ServiceProvider;
+// Importado CRUDLaravel5.4
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // CRUDLaravel5.4
+            // El máximo es 191
+            Schema::defaultStringLength(191);
+        // 
     }
 
     /**

@@ -12,7 +12,7 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+$factory->define(CRUDLaravel54\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
@@ -22,3 +22,15 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+// CRUDLaravel5.4
+    $factory->define(CRUDLaravel54\Product::class, function (Faker\Generator $faker) {
+        static $password;
+
+        return [
+            'name' => $faker->sentence(2),
+            'short' => $faker->text(140),
+            'body' => $faker->text(900),
+        ];
+    });
+// 
