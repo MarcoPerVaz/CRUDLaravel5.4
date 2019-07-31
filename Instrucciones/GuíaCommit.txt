@@ -56,3 +56,6 @@ Commit - Se implementa la letra R(Read) de CRUD
   -Se edita la vista products/index.blade.php 
     -Se vincula Ver con la vista show.blade.php
     -Se vincula Editar con la vista edit.blade.php
+Commit - Se implementa la letra D(Delete) de CRUD
+  -Se crea la función destroy en ProductController
+  -Se edita la vista index.blade.php, creando un formulario para eliminar el producto
