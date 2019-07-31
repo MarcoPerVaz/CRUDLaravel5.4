@@ -33,3 +33,9 @@ Commit - Creación de model, migration, controller, seeder
   -Se crea la Base de Datos CRUDLaravel54
   -Se usa el comando migrate:refresh
     -php artisan migrate:refresh --seed
+Commit - Ruta resource, función index(ProductController) y edición vista welcome
+  -Se edita el archivo web.php
+    -Se crea una ruta del tipo recursos
+      -Route::resource('products', 'ProductController');
+  -Se crea la función index en ProductController
+  -Se edita la vista welcome.blade.php

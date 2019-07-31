@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// CRUDLaravel5.4
+    Route::resource('products', 'ProductController');
+// 
