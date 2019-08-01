@@ -68,3 +68,19 @@ Commit - Usando Blade para crear Partials(Fragmentos de HTML)
   -Se edita la vista info.blade.php y luego se usa la directiva include para agregarlo a la vista index.blade.php
   -Se edita la vista aside.blade.php y luego se usa la directiva include para agregarlo a la vista index.blade.php
     -Se usa la directiva include para agregarlo también a la vista show.blade.php
+Commit - Vistas Edit y Create con Partials y LaravelCollective
+  -Se instala la dependencia Laravel LaravelCollective
+    -composer require "laravelcollective/html":"^5.3.0"
+      -En config/app.php 
+        -En Providers
+          -Collective\Html\HtmlServiceProvider::class,
+        -En Alias
+          -'Form' => Collective\Html\FormFacade::class,
+           'Html' => Collective\Html\HtmlFacade::class,
+  -Se crea la vista products/edit.blade.php
+    -Se edita la vista
+  -Se crea la vista products/create.blade.php
+    -Se edita la vista
+  -Se crea la función edit en ProductController
+  -Se crea la función create en ProductController
+  -Se edita la vista products/fargment/form.blade.php

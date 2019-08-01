@@ -177,6 +177,10 @@ return [
         CRUDLaravel54\Providers\EventServiceProvider::class,
         CRUDLaravel54\Providers\RouteServiceProvider::class,
 
+        // CRUDLaravel5.4 LaravelColective
+            Collective\Html\HtmlServiceProvider::class,
+        // 
+
     ],
 
     /*
@@ -225,6 +229,11 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        // CRUDLaravel5.4 LaravelColective
+            'Form' => Collective\Html\FormFacade::class,
+            'Html' => Collective\Html\HtmlFacade::class,
+        //  
 
     ],
 
