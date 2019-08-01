@@ -84,3 +84,18 @@ Commit - Vistas Edit y Create con Partials y LaravelCollective
   -Se crea la función edit en ProductController
   -Se crea la función create en ProductController
   -Se edita la vista products/fargment/form.blade.php
+Commit - Validación con Form Requests
+  -Se crea un FormRequest llamado ProductRequest
+    -php artisan make:request ProductRequest
+    -Se edita ProductRequest
+  -Se crea la función store en ProductController
+    -En está función es donde se usa el FormRequest
+      Nota: No olvidar importar el trait del FormRequest
+        -use CRUDLaravel54\Http\Requests\ProductRequest;
+  -Se crea la función update en ProductController
+    -En está función es donde se usa el FormRequest
+      Nota: No olvidar importar el trait del FormRequest
+        -use CRUDLaravel54\Http\Requests\ProductRequest;
+  -Se edita la vista products/fragment/error.blade.php
+    -Se vincula la vista error.blade.php a la vista create.blade.php
+    -Se vincula la vista error.blade.php a la vista edit.blade.php
