@@ -102,3 +102,12 @@ Commit - Validación con Form Requests
 Commit - Se implementa las letras C(Create) y U(Update) de CRUD
   -Se edita la función update de ProductController
   -Se edita la función store de ProductController
+Commit - Traducción de mensajes de error de Inglés a Español
+  -En config/app.php
+    -Modificar la línea 'locale' => 'en', por 'locale' => 'es',
+  -Se crea la carpeta es en resources/lang
+    -resources/lang/es
+    -Dentro se crean los archivos auth.php, pagination.php, passwords.php y validation.php
+      -Ir al sitio web https://github.com/caouecs/Laravel-lang/tree/master/src/es
+        -Copiar y reemplazar el contenido de los 4 archivos
+Fin
