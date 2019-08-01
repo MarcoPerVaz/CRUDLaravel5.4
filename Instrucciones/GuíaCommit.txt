@@ -99,3 +99,6 @@ Commit - Validación con Form Requests
   -Se edita la vista products/fragment/error.blade.php
     -Se vincula la vista error.blade.php a la vista create.blade.php
     -Se vincula la vista error.blade.php a la vista edit.blade.php
+Commit - Se implementa las letras C(Create) y U(Update) de CRUD
+  -Se edita la función update de ProductController
+  -Se edita la función store de ProductController
